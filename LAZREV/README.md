@@ -1,0 +1,1 @@
+Library Used: Locomotive JS (for Smooth Scrolling), GSAP (for Animation)
