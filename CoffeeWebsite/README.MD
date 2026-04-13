@@ -1,1 +1,3 @@
 This is A Coffee Webpage. Developed Using HTML, CSS, JS
+This is First Section...
+![alt text](image.png)
