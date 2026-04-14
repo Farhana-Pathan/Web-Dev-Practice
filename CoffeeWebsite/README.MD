@@ -1,1 +1,0 @@
-This is A Coffee Webpage. Developed Using HTML, CSS, JS
