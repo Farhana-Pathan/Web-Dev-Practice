@@ -1,0 +1,238 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <!-- <link rel="stylesheet" href="/CSS/Products.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+ </head>
+ <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <Span><Span>🛒</Span> GroceryStore</Span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="link"><a href="Index.html" id="home">Home</a></li>
+                    <li class="link"><a href="products.html" id="products" >Products</a></li>
+                    <li class="link"><a href="cart.html" id="cart">Cart</a></li>
+                    <li class="link"><a href="order.html" id="order" >Order</a></li>
+                    <li class="link"><a href="login.html" id="login">Login</a></li>
+                    <li class="link"><a href="about.html" id="about">features</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <div id="menu-btn"><button class="fas fa-bars" class="icons-btn" aria-label="Open menu"></button></div>
+                <div id="search-btn" ><button class="fas fa-search" class="icons-btn" ></button></div>  
+                <div id="cart-btn"><button class="fas fa-shopping-cart" class="icons-btn"></button></div> 
+                <div id="login-btn"><button class="fas fa-user" class="icons-btn"></button></div>  
+            </div>
+        </nav>
+            <!-- Search bar -->
+            <form class="Search-form">
+                <input type="search" id="Search-box" placeholder="Search Here..."></input>
+                <label for="Search-box"><i class="fas fa-search"></i></label> 
+            </form>
+            <!-- Cart Items -->
+            <div class="shopping-cart">
+                <div class="cart-items">
+                    <i class="fas fa-trash" id="cart-close"></i>
+                    <img src="../Image/lemon.png" alt="Product Image" width="25px">
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-name">Lemon</h3>
+                        <span class="price">$5.00/- </span>
+                        <span class="quantity">Qty : 1</span>
+                    </div>
+                </div> 
+                <div class="cart-items">
+                    <i class="fas fa-trash" id="cart-trash"></i>
+                    <img src="../Image/water_mellon.png" alt="Product Image" width="25px">
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-name">Watermellon</h3>
+                        <span class="price">$10.00/- </span>
+                        <span class="quantity">Qty : 1</span>
+                    </div>
+                </div> 
+                <div class="cart-items">
+                    <i class="fas fa-trash" id="cart-trash"></i>
+                    <img src="../Image/cauliflower.png" alt="Product Image" width="25px">
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-name">Cauliflower</h3>
+                        <span class="price">$8.00/- </span>
+                        <span class="quantity">Qty : 2</span>
+                    </div>
+                </div>
+                <div class="total"> Total : $23/- </div> 
+                <a href="cart.html" class="btn">Checkout</a>  
+            </div>
+            <!-- Login  -->
+            <div class="login-form">
+                <i class="fas fa-times" id="form-close"></i>
+                <h3>Login Now</h3>
+                <form action="" class="form">
+                    <span>Username</span>
+                    <input type="email" placeholder="Enter your Email" class="box">
+                    <span>Password</span>
+                    <input type="password" placeholder="Enter your password" class="box">
+                    <input type="submit" value="Login Now" class="btn">
+                    <p>Forgot your password? <a href="#">Click Here</a></p>
+                    <p>Don't have an account? <a href="#">Register Now</a></p>
+                </form>
+            </div>
+        </header>
+
+        <!-- banner section  -->
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>Fresh and <span>Organic</span> Products</h3>
+                <p>Get your groceries delivered fresh to your doorstep. Shop now for the best deals on organic produce!</p>
+                <a href="../products.html" class="btn">Shop Now</a>        
+            </div>
+
+        </section>
+        <section class="features" id="features">
+            <h1 class="heading"> Our <span>Features</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="../Image/feature.jpg" alt="">
+                    <h3>Fresh and Organic</h3>
+                    <p>We offer a wide variety of fresh and organic products, sourced from local farms and trusted suppliers.</p>
+                    <a href="about.html" class="btn">Read More</a>
+                </div>
+                <div class="box">
+                    <img src="../Image/delivery1.png" alt="
+                    ">
+                    <h3>Wide Selection</h3>
+                    <p>Our store features a diverse selection of groceries, including fruits, vegetables, dairy, meat, pantry staples, and more.</p>
+                    <a href="about.html" class="btn">Read More</a>
+                </div>
+                <div class="box">
+                    <img src="../Image/easy-pay.png" alt="">
+                    <h3>Convenient Shopping</h3>
+                    <p>Shop from the comfort of your home and enjoy the convenience of online ordering and home delivery.</p>
+                    <a href="about.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- products section  -->
+        <section class="products" id="products">
+            <h1 class="heading"> Our <span>Products</span></h1>
+            <div class="products-slider">
+                <div class="wrapper">
+                    <div class="box">
+                        <img src="../Image/lemon.png" alt="" width="150px">
+                        <h3>Lemon</h3>
+                        <div class="price">$5.00/- <span>$7.00/-</span></div>
+                        <div class="offer"> 20% off </div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">
+                        <img src="../Image/guvava.png" alt="" width="150px">
+                        <h3>Orange</h3>
+                        <div class="price">$7.00/- <span>$9.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">
+                        <img src="../Image/manago.jpg" alt="" width="150px">
+                        <h3>Mango</h3>
+                        <div class="price">$15.00/- <span>$20.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">
+                        <img src="../Image/Banana.jpg" alt="" width="150px">
+                        <h3>Banana</h3>
+                        <div class="price">$8.00/- <span>$10.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">
+                        <img src="../Image/apple.jpg" alt="" width="150px">
+                        <h3>Apple</h3>
+                        <div class="price">$12.00/- <span>$15.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">
+                        <img src="../Image/grapes.jpg" alt="" width="150px">
+                        <h3>Grapes</h3>
+                        <div class="price">$10.00/- <span>$12.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                        <div class="box">
+                        <img src="../Image/Banana.jpg" alt="" width="150px">
+                        <h3>Pineapple</h3>
+                        <div class="price">$18.00/- <span>$22.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                    <div class="box">   
+                        <img src="../Image/water_mellon.png" alt="" width="150px">
+                        <h3>Watermellon</h3>
+                        <div class="price">$10.00/- <span>$15.00/-</span></div>
+                        <div class="stars"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- icons section  -->
+        <section class="icons-container">       
+            <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="info">
+                    <h3>Free Delivery</h3>
+                    <span>On orders over $50</span>
+                </div>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="info">
+                    <h3>24/7 Support</h3>
+                    <span>Get support all day</span>
+                </div>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-money-bill-wave"></i>
+                <div class="info">
+                    <h3>Money Back Guarantee</h3>
+                    <span>Within 7 days</span>
+                </div>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-credit-card"></i>
+                <div class="info">
+                    <h3>Secure Payment</h3>
+                    <span>100% secure payment</span>
+                </div>
+            </div>
+        </section>
+        <script src="../JavaScript/Script.js"></script>
+ </body>
+ </html>
