@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nasheed-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nasheed-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#nasheed-name{
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#nasheed-btns{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#nasheed-btns i {
+    padding: 25px;
+}
+
+#slider{
+    -webkit-appearnace: none;
+    -moz-appearance: none;
+    appearance: none;
+}
