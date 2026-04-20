@@ -5,6 +5,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 #nasheed-player{
@@ -32,11 +34,27 @@ body{
 }
 
 #nasheed-btns i {
-    padding: 25px;
+    padding: 20px;
 }
 
 #slider{
     -webkit-appearnace: none;
     -moz-appearance: none;
     appearance: none;
+    width: 300px;
+    height: 5px;
+    background: repeating-linear-gradient(45deg, rgb(69, 50, 50), rgb(109, 74, 40) 106px, rgb(55, 59, 27), rgb(46, 60, 76) 106px);
+    border: 1px solid rgb(55, 59, 27);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearnace: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgb(55, 59, 27);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
 }
