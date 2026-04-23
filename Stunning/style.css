@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #e8e7e7;
+
+}
+.page-container {
+    background-color: white;
+    width: 80vw;
+    height: 90vh;
+    margin: 30px auto;
+    border-radius: 30px;
+
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;          
+    justify-content: space-between; 
+    
+    padding:0 60px;
+}
+.logo{
+    
+    padding-top: 30px;
+}
+
+.logo img{
+    width: auto;
+    height: 100px;
+    
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    gap : 20px;
+}
+
+.nav-menu a{
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.nav-links:hover{
+
+    color: black;
+}
+
+.account-button{
+    padding: 15px 25px;
+    background-color: lightpink;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(82, 63, 180);
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text-container {
+    max-width: 550px;
+    padding: 20px;
+}
+
+.main-heading{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.image-container{
+    padding: 20px;
+}
+.main-image{
+
+    width: 450px;
+    height: auto;
+}
+.main-paragraph{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    margin-bottom: 30px;
+}
+.new-account{
+    padding: 15px 25px;
+    background-color: rgb(82, 63, 180);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.btns-ions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn{
+    padding: 15px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.icon-btn:hover{
+    color: lightgray;
+}
+
+.bottum-container{
+    display: flex;
+    align-items: center;
+    padding-left: 109px;
+    max-width: 550px;
+    padding-bottom: 70px;
+}
+.star-icon{
+    font-size: 12px;
+    color: lightpink;
+}
+
+.star-icon .fa-star{
+    font-size: 15px;
+    color: rgb(82, 63, 180);
+}
+
+.text{
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+}
+.dribble{
+    font-size: 30px;
+    color: rgb(185, 185, 185);
+    font-weight: 700;
+    font-family: Miniver;
+    padding: 10px;
+    /* padding-bottom: 30px; */
+}
+.behance{
+    font-size: 30px;
+    color: rgb(185, 185, 185);
+    font-weight: 700;
+    padding: 10px;
+    /* padding-bottom: 30px; */
+}
