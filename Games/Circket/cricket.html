@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link href="cricket.css" rel="stylesheet"></link>
+    
+    <script src="cricket.js"></script>
+</head>
+<body>
+
+    
+    <Main  class="main-container">
+        <!-- style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;"> -->
+        <header class="header-sec">
+            <div class="logo"><img src="BatBallStump.png" alt=""></div>
+            <h1 style="padding: 20px; margin: 20px;">Bat Ball Stump Game</h1>
+        </header>
+
+        <div class="container" style="display: flex; gap: 20px;">
+
+
+            <button class="btn" onclick="
+                let computerChoice = ComputerChoice();
+                let resultMsg = getResult('Bat', computerChoice);
+                showResult('Bat', computerChoice, resultMsg);">  
+                <div class="icon-box"><img src="Bat.png" alt="bat img">
+                </div>
+                <span>Bat</span>
+            </button>
+
+            <!-- // Ball button -->
+            <button class="btn" onclick="; 
+                computerChoice = ComputerChoice();
+                resultMsg = getResult('Ball', computerChoice);
+                showResult('Ball', computerChoice, resultMsg);">
+                <div class="icon-box"><img src="Ball.png" alt=""></div>
+                <span>Ball</span>
+            </button>
+
+            <!-- // Stump button -->
+            <button class="btn" onclick="
+                computerChoice = ComputerChoice();
+                resultMsg = getResult('Stump', computerChoice);
+                showResult('Stump', computerChoice, resultMsg);">
+                <div class="icon-box"><img src="Stump.png" alt=""></div>
+                <span>Stump</span>
+            </button>
+    </div>
+
+    <div class="displayResult">
+        <div class="heading">
+            <span class="text"> You </span>
+            <span class="text"> Vs </span>
+            <span class="text"> Computer </span>
+        </div>
+        <div class="score-card">
+            <h3 id="user-move"></h3>
+            <h3 id="computer-move"> </h3>
+            <h3 id="result"></h3>
+            <h3 id="score"></h3>
+        </div>
+
+    </div>
+    
+    <button class="reset-btn" onclick="localStorage.clear()
+    resetScore()" > Reset</button>
+
+    
+
+
+   
+    </Main>
+    
+</body>
+</html>

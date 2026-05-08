@@ -110,6 +110,12 @@ header .navbar{
     color: var(--primary-color);
     background: var(--secondary-color);
 }
+
+.navbar :where(#menu-close-btn, #menu-open-btn){
+    display: none;
+}
+
+/* Hero section Starts Here */
 .hero-section{
     min-height: 100vh;
     background: var(--primary-color);
@@ -179,7 +185,53 @@ header .navbar{
 
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px){
+    :root{
+    --font-size-m: 1.rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8m;
+    }
+
+    .navbar :where(#menu-close-btn, #menu-open-btn){
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .navbar #menu-close-btn{
+        position: absolute;
+        right: 30px;
+        top:30px;
+    }
+
+    .navbar #menu-open-btn{
+        color: var(--white-color);
+    }
+
     .navbar .nav-menu{
         display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        background-color: var(--white-color);
+        transition: left 0.2s ease;
     }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: -300px;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+
 }
